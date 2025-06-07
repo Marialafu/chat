@@ -1,10 +1,10 @@
 const fs = require('fs');
-const path = require('path');
+const {join} = require('node:path')
 
 const initialController = {};
 
 initialController.try = (req, res) => {
-  res.send('<h1>Hello</h1>');
+  res.send('Servidor activo')
 };
 
 module.exports = initialController;
